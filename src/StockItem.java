@@ -4,22 +4,31 @@ public class StockItem {
 	private static int StockItemID = 0;
 	private String location;
 	
-	ProductStockLevel PSL = new ProductStockLevel();
 	
-	public StockItem(){
-		PSL.setStockLevel(0);
-		StockItemID = PSL.getStockLevel() + 1;
+
+	
+	public StockItem(int ID){
+		StockItemID = ID;
 		
 	}
 	
-	public StockItem(String Name, int StockLevel){
-		PSL.setStockLevel(StockLevel);
-		StockItemID = PSL.getStockLevel() + 1;
-		
-	}	
 	
-	public void Deliver(){
-		PSL.ItemRemoved();	
+	public void Deliver(OrderLine o, ProductStockLevel psl){			
+		psl.ItemRemoved();
+		o.setDeliveredTrue();
 	}
+	
+	public void PackItem(OrderLine o){
+		o.setPackedTrue();
+	}
+	
+	public void PickItem(OrderLine o){
+		o.setPickedTrue();
+	}
+	
+	public void ApplyPorousWare(OrderLine o){
+		o.setPorousWareAppliedTrue();
+	}
+	
 	
 }
