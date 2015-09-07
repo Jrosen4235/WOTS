@@ -99,6 +99,16 @@ public class OrderLine {
 			packedAnswer = "No";
 		}
 	}
+	
+	public void setPickedAnswer(){
+		if(picked){
+			pickedAnswer = "Yes";
+		}
+		
+		else{
+			pickedAnswer = "No";
+		}
+	}
 		
 	public void setNeedsPorousWareAnswer(){
 		if(NeedsPorousWare){
@@ -109,6 +119,14 @@ public class OrderLine {
 		}
 	}
 	
+	public void setPorousWareAppliedAnswer(){
+		if( PourousWareApplied){
+			 PourousWareAppliedAnswer = "Yes";
+		}
+		else{
+			 PourousWareAppliedAnswer = "No";
+		}
+	}
 	
 	public String toString(){
 		return "\n\nStock Item ID: " + StockItemID +"\n"+ "Packed? " +packedAnswer + "\n" + "Picked? " 

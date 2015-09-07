@@ -20,7 +20,7 @@ public class OrderList {
 	}
 	
 	public void printOrders(){
-		Orders.forEach((CustomerID,OrderForm)->System.out.println(OrderForm));
+		Orders.forEach((CustomerID,OrderForm)->System.out.println(OrderForm+"\n"));
 		
 	}
 	
@@ -34,5 +34,7 @@ public class OrderList {
 		return/*of=*/ Orders.get(ID);
 		//of.printOrderLines();
 	}
+	
+	
 }
 

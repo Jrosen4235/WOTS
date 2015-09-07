@@ -3,7 +3,7 @@ public class ProductStockLevel {
 	private static int StockLevels;
 	
 	
-	
+
 	public ProductStockLevel(){
 		
 	}
@@ -17,9 +17,10 @@ public class ProductStockLevel {
 		return StockLevels;
 	}
 	
-	public void setStockLevel(int level){
-		StockLevels = level;
+	public void addStockLevel(int amount){
+		StockLevels += amount;
 	}
+	
 	
 	public void ItemRemoved(){
 		StockLevels -= 1;

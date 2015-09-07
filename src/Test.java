@@ -1,5 +1,5 @@
 
-public class Test {
+/*public class Test {
 	public static void main(String[] args){
 		/*test 1
 		//Create Stock Levels For test
@@ -35,7 +35,7 @@ public class Test {
 		//test2
 		
 		//create OrderForm
-		OrderList oList = new OrderList();
+		/*OrderList oList = new OrderList();
 		OrderForm of  = new OrderForm(123,"29 Brook Rise");
 		OrderForm of1 = new OrderForm(124, "19 Tudor Close");
 		
@@ -66,4 +66,4 @@ public class Test {
 		
 		
 	}
-}
+}*/
